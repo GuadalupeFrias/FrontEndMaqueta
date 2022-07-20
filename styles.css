@@ -129,6 +129,7 @@
         margin: 25em;
         box-sizing: content-box;
        width: 100%;
+       border-radius: 5px;
     }
     #nombre{
         font-family: Jost;
