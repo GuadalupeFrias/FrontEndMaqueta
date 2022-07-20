@@ -1,0 +1,249 @@
+*{
+    color: #616161;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    
+    line-height: 120.5%;
+    }
+    
+    
+    html, body{
+        box-sizing: content-box;
+        width: 100%;
+    }
+    
+    header{
+        background-color: #A0B482;
+        position: absolute;
+        width: 1470px;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+    }
+    header img{
+        position: absolute;
+        width: 166px;
+        height: 101px;
+        left: 65px;
+        top: 0px;
+    }
+    
+    .navegacion_header{
+        position: absolute;
+        width: 760px;
+        height: 24px;
+        left: 603px;
+        top: 30px;
+        line-height: 120.5%;
+        
+        text-align: right;
+        text-transform: uppercase;
+        
+        
+    }
+    .nav_item{
+        list-style:none; 
+        display: inline-block;
+        padding: 5px;
+       
+    }
+    .nav_link{
+        color: #616161;
+        text-decoration:none;
+    }
+    .nav_link:active{
+        color: #616161;
+        font-family:'Jost', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        font-style: normal;
+        text-decoration:none;
+        }
+    
+    .nav_link:hover{
+        color: #ffff;
+        font-family:'Jost', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        font-style: normal;
+        text-decoration:none;
+        
+    }
+    
+    .nav_btn{
+        border-radius:10px;
+        outline:none;
+        padding: 0; border: none; background: none;
+        color: white;
+        text-decoration:none;
+        text-transform: uppercase;
+        }
+    
+        .nav_btn:active{
+            color: #616161;
+            font-family:'Jost', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            font-style: normal;
+            text-decoration:none;
+            text-transform: uppercase;
+            }
+        
+        .nav_btn:hover{
+            color: #616161;
+            font-family:'Jost', sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            font-style: normal;
+            text-transform: uppercase;
+            
+        }
+    nav.li{
+        float: right;
+    }
+    main{
+        position: relative;
+        min-height: calc(100% - 4rem);
+        width: 1147px;
+      
+        display: block;
+        right: 167px;;
+       
+        left: 167px;
+        top: 171px;
+        border-radius: 2px;
+        box-sizing: content-box;
+        width: 100%;
+    }
+    
+    .home{
+        margin-bottom: 200px;
+        margin-top: 200px;
+        box-sizing: content-box;
+        width: 100%;
+    }
+    #imagenPerfilContenedor{
+        display: flex;
+        align-items: center;
+        margin: 25em;
+        box-sizing: content-box;
+       width: 100%;
+    }
+    #nombre{
+        font-family: Jost;
+        font-size: 141px;
+        font-weight: 400;
+        line-height: 118px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        
+       
+        
+    
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 80px;
+    line-height: 91px;
+    text-transform: uppercase;
+    
+    color: #616161;
+    }
+    
+    #apellido{
+    
+    
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 141px;
+    line-height: 91px;
+    text-transform: uppercase;
+    margin-left: 50px;
+    color: #616161;
+    }
+    #imagenPerfil{
+    
+        width: 700px;
+        
+        text-align : center;
+    
+    
+    }
+    .acerca_de{
+      
+        position:absolute;  
+        background-color: antiquewhite;
+    }
+    
+    footer{
+        position: relative;
+        width: 1440px;
+        height: 203px;
+        left: 0px;
+        top: 821px;
+        
+        background: #A0B482;
+    }
+    
+    /*-----------*/
+    
+    @media (max-width:320px){
+    
+        .navegacion_header{
+            position: absolute;
+            width: 760px;
+            height: 24px;
+            left: 300px;
+            top: 30px;
+            line-height: 120.5%;
+            
+            text-align: right;
+            text-transform: uppercase;
+        
+           
+        }
+      }
+    /*.navegacion_header{
+        position: absolute;
+        width: 760px;
+        height: 24px;
+        left: 603px;
+        top: 40px;
+        
+        
+        text-align: right;
+        text-transform: uppercase;
+        
+        
+    }
+    .nav_link{
+        color: #616161;
+    }
+    .nav_link:active{
+        color: #616161;
+        font-family:'Jost', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        font-style: normal;
+    }
+    
+    .nav_link:hover{
+        color: #ffff;
+        font-family:'Jost', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        font-style: normal;
+    }
+    
+    nav.ul{
+        list-style-type: none;
+    }
+    nav.li{
+        float: right;
+    }*/
+    
+    
