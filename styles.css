@@ -6,7 +6,7 @@
     color: #616161;
     font-family: 'Jost';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400em;
     line-height: 120.5%;
     }
     html, body {
@@ -51,12 +51,21 @@
     .custom-toggler.navbar-toggler {
         border-color: black;
         border-radius: 5px;
-        border-style:double;
+        border-style:hidden ;
+        background-size: 100%;
+        
     }
     .custom-toggler .navbar-toggler-icon{
-        background-image:url("./src/PRIVATE_LOGIN.jpg");
+        background-image:url("./src/029.png");
         background-size: 100%;
+        width: 4em;
+        height: 4em;
+        min-height: 100%;
+        text-align: center;
+        
     }
+   
+   
     .navbar-collapse{
         align-items: right;
     }
@@ -129,51 +138,55 @@
     }
     
     .home{
-        margin-bottom: 200px;
+        margin-bottom: 20rem;
         margin-top: 200px;
-      
+        
     }
+   .datos_home{
    
-
-    #imagenPerfil, #nombre_apellido{
+    text-transform: uppercase;
+    
+    
+   }
+    
+    #imagenPerfil{
         max-width: 100%;
         display: block;
+        max-height: 100%;
+        margin-top: 2em;
     }
-    #nombre{
-        font-family: Jost;
-        font-size: 141px;
-        font-weight: 400;
-        line-height: 118px;
-        letter-spacing: 0.01em;
+    .nombre{
+        font-size:  calc(3rem + 1vw);
+        max-width: 100%;
+        display: block;
+      
         text-align: left;
         
-       
+       margin-top: 1em;
         
     
     
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 80px;
-    line-height: 91px;
-    text-transform: uppercase;
+   
     
-    color: #616161;
+    
+    
+   
+    
    
     }
     
-    #apellido{
+    .apellido{
+    
+
+    font-size:  calc(5rem + 1vw);
+    
+    max-width: 100%;
+    display: block;
+   
+  
+  
     
     
-    
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 141px;
-    line-height: 91px;
-    text-transform: uppercase;
-    margin-left: 50px;
-    color: #616161;
     
     }
    
@@ -189,7 +202,11 @@
     }
     
     /*-----------*/
-   
+    @media (min-width: 200rem) {
+        p {
+          font-size: 3rem;
+        }
+      }
      
     /*.navegacion_header{
         position: absolute;
