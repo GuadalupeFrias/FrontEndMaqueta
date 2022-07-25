@@ -158,10 +158,12 @@
    section{
         width: auto;
         margin: 5rem; 
+       
     }
     .home{
         border-bottom-style: double;
         border-bottom-width: 2rem;
+       
        
         
     }
@@ -177,6 +179,11 @@
     overflow: hidden;
     
    }
+   #imagenAcercaDe{
+    max-width: 100%;
+    display: block;
+    max-height: 100%;
+   }
    
    #imagenPerfil{
     max-width: 100%;
@@ -186,7 +193,7 @@
     border-radius: 5em;
 }
     .nombre{
-        font-size:  calc(3rem + 1vw);
+        font-size:  calc(2.5rem + 1vw);
         margin-top: 1em;
         display: grid;
         
@@ -196,9 +203,26 @@
     font-size:  calc(5rem + 1vw);
     display: grid;
     justify-items: center;
+    
      }
    
-   
+    .titulo{
+        text-align: center;
+        margin-bottom: calc(5rem + 1vw);;
+        font-size: calc(1rem + 1vw);
+        text-decoration: underline;
+    }
+    #contenido_acerca_de{
+        font-size: calc(0.9rem + 1vw);
+        text-indent: calc(0.9rem + 1vw);
+        text-align: justify;
+    }
+    .acerca_de{
+        border-bottom-width: 2rem;
+        border-bottom-style:groove ;
+        
+    }
+
     footer{
        
         margin: 0 auto;
@@ -211,11 +235,9 @@
     
     /*-----------*/
     @media (max-width: 779px) {
-        p {
-          font-size: 3rem;
-        }
+       
         .nombre{
-            font-size: calc(1.5rem + 1vw);
+            font-size: calc(1.1rem + 1vw);
         }
         .apellido{
             font-size: calc(3rem + 1vw);
@@ -223,20 +245,16 @@
       }
 
       @media (max-width: 523px) {
-        p {
-          font-size: 3rem;
-        }
+        
         .nombre{
-            font-size: calc(1rem + 1vw);
+            font-size: calc(0.8rem + 1vw);
         }
         .apellido{
             font-size: calc(2rem + 1vw);
         }
       }
       @media (max-width: 415px) {
-        p {
-          font-size: 3rem;
-        }
+       
         .nombre{
             font-size: calc(0.2rem + 1vw);
         }
