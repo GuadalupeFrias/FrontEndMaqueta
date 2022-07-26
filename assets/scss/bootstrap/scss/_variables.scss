@@ -17,6 +17,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
+
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -1084,9 +1085,10 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
+$card-border-width:                 1rem;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
+$card-border-left-color:            #A0B482 !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
@@ -1290,10 +1292,10 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default; // 3x covers widt
 // Progress bars
 
 // scss-docs-start progress-variables
-$progress-height:                   1rem !default;
+$progress-height:                   2rem !default;
 $progress-font-size:                $font-size-base * .75 !default;
 $progress-bg:                       $gray-200 !default;
-$progress-border-radius:            $border-radius !default;
+$progress-border-radius:            10rem!default;
 $progress-box-shadow:               $box-shadow-inset !default;
 $progress-bar-color:                $white !default;
 $progress-bar-bg:                   $primary !default;
