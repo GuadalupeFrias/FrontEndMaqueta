@@ -88,25 +88,33 @@
         <span >ACERCA DE MI</span>
         </div>
         <div class="col-4 justify-content-end align-items-end icons">
-        <span class="material-icons-outlined">
-          create
-        </span>
+          <button   id="boton_edicion" onclick="edicion()"><span class="material-icons-outlined">create </span></button>
+          
+       
         <span class="material-icons-outlined">
             add
         </span>
-        <span class="material-icons-outlined">
+        <button   id="boton_eliminar" onclick="eliminar()"> <span class="material-icons-outlined">
             delete
-        </span>
+        </span></button>
         </div>
       </div>
         <div class="row justify-content-around pepe">
           
           <div class="col acerca_de_contenido">
             
-          
+            
          
           <p id="contenido_acerca_de">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, </p>
-          
+          <div id="edicionFormulario" id="edicion_formulario">
+          <div class="mb-3" >
+            
+            <label for="exampleFormControlTextarea1" class="form-label">Ingrese su nueva biografía</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Confirmar</button>
+          <button type="submit" class="btn btn-primary">Cancelar</button>
+          </div>
           </div>
           <div class="col container-md">
             <div container="imagenPerfilContenedor">
@@ -257,14 +265,93 @@
               </span></a>
         </div>
       </div>
+
+      <div class="card mb-3">
+        <div class="container-video">
+          
+          <iframe id ="video" controls autoplay title="vimeo-player" src="https://player.vimeo.com/video/496712879?h=004614cf9d"  allowfullscreen></iframe>
+       
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a  href="#"">
+           
+            <span class="material-icons-outlined">
+              arrow_forward
+              </span></a>
+        </div>
+      </div>
      </section>
   
   </main>
     <!-- Footer -->
     <footer>
- 
+      <div  class="container-fluid">
+        <div class="row">
+          <div class="col align-self-start ">
+            
+            <ul class="nav estilo_footer">
+              <li class="nav_item" >
+                <a  href=""><img class="img_footer"src="src/link.png" alt="Linkedin"  class="d-inline-block ">
+                  
+                </a>
+              </li>
+              <li class="nav_item">
+                <a  href=""><img class="img_footer"src="src/instagram.png" alt="instagram"  class="d-inline-block ">
+                 
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href=""><img class="img_footer" src="src/githuv.png" alt="github"  class="d-inline-block ">
+                 
+                </a>
+              </li>
+           
+            </ul>
+            <div class="col align-self-start ">
+              copyright@2022 guadalupe frias
+            </div>
+          </div>
+          
+          <div class="col align-self-end">
+           <ul>
+            <li>about me</li>
+            <li>proyects</li>
+            <li>disabled</li>
+            <li>contact</li>
+           </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
+    
+      
+    <!--modal <div class="modal" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ACERCA DE MI</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="edicion_acercaDeMi" class="form-label">Ingrese nuevo texto</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Aqui puede modificar brevemente la descripcion del perfil</div>
+              </div>
+             
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>-->
 
     <script src="scripts.js"></script>
 

@@ -2176,7 +2176,7 @@ textarea.form-control-lg {
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
   appearance: none;
-  /*color-adjust: exact;*/
+  color-adjust: none;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -3991,9 +3991,9 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color:#e9ecef;
+  background-color: #fff;
   background-clip: border-box;
-  border-left: 5rem solid black;
+  border-left: 5rem double rgb(98, 98, 95);
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -4048,7 +4048,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1rem solid rgba(0, 0, 0, 0.125);
+  border-bottom: 5rem solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {
   border-radius: 0 0 0 0;
@@ -4057,7 +4057,7 @@ textarea.form-control-lg {
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1rem solid rgba(0, 0, 0, 0.125);
+  border-top: 5rem solid rgba(0, 0, 0, 0.125);
 }
 .card-footer:last-child {
   border-radius: 0 0 0 0;

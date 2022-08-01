@@ -313,6 +313,15 @@
         
         background: #A0B482;
     }
+
+    .estilo_footer{
+        margin: calc(2rem + 1vw);
+    }
+
+    .img_footer{
+        width: 40px;
+        height: 40px;
+      }
     
     /*-----------*/
     @media (max-width: 779px) {
@@ -350,6 +359,16 @@
         font-size: calc(0.5rem + 1vw);
       }
     }
+    @media (max-width: 393px) {
+
+        .img_footer{
+          width: 20px;
+          height: 20px;
+        }
+      }
+     #edicionFormulario{
+        display: block;
+     }
 
     
     /*.navegacion_header{
