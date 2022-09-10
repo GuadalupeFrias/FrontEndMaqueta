@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width"/>
@@ -23,7 +23,7 @@
                
           
 
-                        <span class="navbar-brand mb-0 h1"><img src="./src/APLogo-20-20.png" alt="logo ArgentinaPrograma"   ></span>
+                        <span class="navbar-brand mb-0 h1"><img src="./src/APLogo-20-20 - copia.png" alt="logo ArgentinaPrograma"   ></span>
                    
                 
                     <button class="navbar-toggler justify-content-end custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
                      <a class="nav_link active" aria-current="page" href="#proyectos">Proyectos</a>
                      </li>
                      <li class="nav_item">
-                     <button class="nav_btn" type="submit">Login</button>
+                     <button class="nav_btn" type="submit" data-bs-toggle="modal" data-bs-target="#loguinModal">Login</button>
                      </li>
                   </ul>
                 </div>
@@ -64,66 +64,62 @@
       
     <section class="home" id="home">
       <div class= "container-sm ">
-        <div class="row align-self-end pepe">
+        <div class="row align-self-end estilos1">
           
           <div class="col-5 container-md datos_home">
             
           
-         <p class="nombre" id="nombre"></p>
-         <p class="apellido" id="apellido"> </p>
+         <p class="nombre" id="nombre">Guadalupe</p>
+         <p class="apellido" id="apellido">Frias </p>
           
           </div>
-          <div class=" col-1"></div>
-          <div class="col-6 container-md align-self-end">
+          <div class=" col-2"></div>
+          <div class="col-5 container-md align-self-end">
             
-        <img id="imagenPerfil" src="./src/trb.gif" alt="foro perfil">
-      
+        <img id="imagenPerfil" src="./src/gif.gif" alt="foro perfil">
+        
         </div>
+        <div class="col-12 justify-content-around universo">
+          <span >bienvenidos a nuestra galaxia</span>
+          </div>
         </div>
     </div>
     </section>
     <section class="acerca_de" id="acerca_de">
       <div class=" row estilo container_titulo">
         <div class="col-8 justify-content-around titulo">
+          
         <span >ACERCA DE MI</span>
         </div>
         <div class="col-4 justify-content-end align-items-end icons">
-          <button   id="boton_edicion" onclick="edicion()"><span class="material-icons-outlined">create </span></button>
+          <button   id="boton_edicion" ><span class="material-icons-outlined">create </span></button>
           
        
-        <span class="material-icons-outlined">
+          <button   id="boton_agregar" ><span class="material-icons-outlined">
             add
         </span>
-        <button   id="boton_eliminar" onclick="eliminar()"> <span class="material-icons-outlined">
+        <button   id="boton_eliminar" > <span class="material-icons-outlined">
             delete
         </span></button>
         </div>
       </div>
-        <div class="row justify-content-around pepe">
+        <div class="row justify-content-around estilos1">
           
           <div class="col acerca_de_contenido">
             
             
-          <p id="contenido_acerca_de"> </p>
+          <p id="contenido_acerca_de"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st</p>
           
-          <div id="edicionFormulario" id="edicion_formulario">
-          <div class="mb-3" >
-            
-            <label for="exampleFormControlTextarea1" class="form-label">Ingrese su nueva biografía</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Confirmar</button>
-          <button type="submit" class="btn btn-primary">Cancelar</button>
-          </div>
+          
           </div>
           <div class="col container-md">
             <div container="imagenPerfilContenedor">
           <img id="imagenAcercaDe" src="./src/githuv.png" alt="foto yo">
             </div>
         </div>
+       
+      </div>
      
-      </div>
-      </div>
     </section>
     <section class="educacion acerca_de" id="educacion">
       
@@ -132,15 +128,15 @@
         <span >EDUCACION</span>
         </div>
         <div class="col-4 justify-content-end align-items-end icons">
-        <span class="material-icons-outlined">
+          <button   id="boton_edicion" ><span class="material-icons-outlined">
           create
-        </span>
-        <span class="material-icons-outlined">
+        </span></button>
+        <button   id="boton_agregar" ><span class="material-icons-outlined">
             add
-        </span>
-        <span class="material-icons-outlined">
+        </span></button>
+        <button   id="boton_eliminar" ><span class="material-icons-outlined">
             delete
-        </span>
+        </span></button>
         </div>
       </div>
       <div class="card estilo">
@@ -160,15 +156,15 @@
           <span >EXPERIENCIA</span>
         </div>
         <div class="col-4 justify-content-end align-items-end icons">
-          <span class="material-icons-outlined">
+          <button   id="boton_edicion" ><span class="material-icons-outlined">
             create
-            </span>
-            <span class="material-icons-outlined">
+            </span></button>
+            <button   id="boton_agregar" ><span class="material-icons-outlined">
               add
-              </span>
-            <span class="material-icons-outlined">
+              </span></button>
+              <button   id="boton_eliminar" > <span class="material-icons-outlined">
               delete
-              </span>
+              </span></button>
         
       </div>
         </div>
@@ -182,7 +178,7 @@
           <img src="src/001.png" class="card-img-bottom" alt="...">
         </div>
       </div>
-  
+   
      </section>
      <section class="Skills" id="skills">
       
@@ -191,15 +187,15 @@
         <span >SKILLS</span>
         </div>
         <div class="col-4 justify-content-end align-items-end icons">
-        <span class="material-icons-outlined">
-          create
-        </span>
-        <span class="material-icons-outlined">
-            add
-        </span>
-        <span class="material-icons-outlined">
-            delete
-        </span>
+          <button   id="boton_edicion" ><span class="material-icons-outlined">
+            create
+          </span></button>
+          <button   id="boton_agregar" ><span class="material-icons-outlined">
+              add
+          </span></button>
+          <button   id="boton_eliminar" ><span class="material-icons-outlined">
+              delete
+          </span></button>
         </div>
       </div>
       <div class="row justify-content-around">
@@ -207,7 +203,7 @@
         <div class="col">
           
         
-        <span id="acerca_de">SKILL </span>
+        <span id="skill">SKILL </span>
         <div class="circle-wrap">
           <div class="circle">
             <div class="mask full">
@@ -221,8 +217,25 @@
         </div>
         </div>
         <div class="col">
+          <div class="col">
           
-        <span id="acerca_de">SKILL </span>
+        
+            <span id="skill">SKILL </span>
+            <div class="circle-wrap">
+              <div class="circle">
+                <div class="mask full">
+                  <div class="fill"></div>
+                </div>
+                <div class="mask half">
+                  <div class="fill"></div>
+                </div>
+                <div class="inside-circle"> 75% </div>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+          
+        <span id="skill">SKILL </span>
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"> 75%</div>
         </div>
@@ -237,15 +250,15 @@
         <span >PROYECTOS</span>
         </div>
         <div class="col-4 justify-content-end align-items-end icons">
-        <span class="material-icons-outlined">
-          create
-        </span>
-        <span class="material-icons-outlined">
-            add
-        </span>
-        <span class="material-icons-outlined">
-            delete
-        </span>
+          <button   id="boton_edicion" ><span class="material-icons-outlined">
+            create
+          </span></button>
+          <button   id="boton_agregar" ><span class="material-icons-outlined">
+              add
+          </span></button>
+          <button   id="boton_eliminar" ><span class="material-icons-outlined">
+              delete
+          </span></button>
         </div>
       </div>
       <div class="card mb-3">
@@ -256,13 +269,9 @@
       </video>
       </div>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a  href="#"">
-           
-            <span class="material-icons-outlined">
-              arrow_forward
-              </span></a>
+          <h5 class="card-title">PROYECTO:</h5>
+          <p class="card-text">DECRICPCION:</p>
+          
         </div>
       </div>
 
@@ -273,13 +282,9 @@
        
       </div>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a  href="#"">
-           
-            <span class="material-icons-outlined">
-              arrow_forward
-              </span></a>
+          <h5 class="card-title">PROYECTO:</h5>
+          <p class="card-text">DECRICPCION:</p>
+          
         </div>
       </div>
      </section>
@@ -309,54 +314,86 @@
               </li>
            
             </ul>
-            <div class="col align-self-start ">
+            
+            <div class="col align-self-start footerDatos" >
               copyright@2022 guadalupe frias
             </div>
             <div class="col align-self-start ">
-            <p id="ubication"></p>
+            <p class="footerDatos" id="ubication"></p>
           </div>
+        
           </div>
           
-          <div class="col align-self-end">
-           <ul>
-            <li>about me</li>
-            <li>proyects</li>
-            <li>disabled</li>
-            <li>contact</li>
+          <div class="col d-flex align-items-end flex-column align-self-center">
+           <ul class="estilo_ulFooter">
+            <li ><a class="footer_link active" aria-current="page" href="#acerca_de">about me</a></li>
+            <li ><a class="footer_link active" aria-current="page" href="#acerca_de">proyects</a></li>
+            <li > <button class="footer_btn" type="submit" data-bs-toggle="modal" data-bs-target="#loguinModal">Login</button></li>
+            <li ><button class="footer_btn" type="submit" data-bs-toggle="modal" data-bs-target="#contactoModal">Contact</button></li>
            </ul>
           </div>
         </div>
       </div>
     </footer>
 
-    
-      
-    <!--modal <div class="modal" id="myModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">ACERCA DE MI</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="edicion_acercaDeMi" class="form-label">Ingrese nuevo texto</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Aqui puede modificar brevemente la descripcion del perfil</div>
-              </div>
-             
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Guardar cambios</button>
-          </div>
-        </div>
+    <!-- Login -->
+<div class="modal fade" id="loguinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">INGRESO DE INTERNAUTA</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-    </div>-->
+      <div class="modal-body">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Usuario</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar ingreso</button>
+        <button type="submit" class="btn btn-primary">Acceder</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="scripts.js"></script>
+<!--Contacto-->
+<div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mensaje al espacio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Usuario:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Mensaje:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+
+  
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
